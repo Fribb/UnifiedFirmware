@@ -123,14 +123,14 @@
 //#define DUAL_EXTRUDER_DUAL_NOZZLES
 
 // This is the distance between each nozzle tip when using a dual hotend like the TH3D Tough Dual Hotend or the E3D Chimera or Dual hotends.
-#define DUAL_HOTEND_X_DISTANCE 18.0
+//#define DUAL_HOTEND_X_DISTANCE 18.0
 
 // If you are using different extruders on your E motors that require different steps/mm then set those below and uncomment DISTINCT_E_FACTORS
 // If you have matching extruders and they do not use the stock steps/mm use the CUSTOM_ESTEPS option instead below the printer configs
 // E0 is for your 1st hotend/extruder, E1 is for your 2nd hotend/extruder
 //#define DISTINCT_E_FACTORS
-#define DUAL_EXTRUDER_E0_STEPS 95
-#define DUAL_EXTRUDER_E1_STEPS 95
+//#define DUAL_EXTRUDER_E0_STEPS 95
+//#define DUAL_EXTRUDER_E1_STEPS 95
 
 // If you need to reverse one or both motors use the below REVERSE_E#_MOTOR_DIRECTION options.
 // E0 is for your 1st hotend/extruder, E1 is for your 2nd hotend/extruder
@@ -146,7 +146,7 @@
 //===========================================================================
 
 // Probing Grid Points - If you want more or less EZABL probe points change the number below, use odd numbers. Total points is # times #.
-#define EZABL_POINTS 5
+#define EZABL_POINTS 10
 
 // Probe Edge - How far from the edge of the bed to probe from. Use 50 if using binder clips. This also sets the edge inset value for MANUAL_MESH_LEVELING.
 #define EZABL_PROBE_EDGE 35
@@ -221,8 +221,8 @@
 // If you need to reverse the e motor direction also enabled the REVERSE_E_MOTOR_DIRECTION option.
 // Example EStep Values: TH3D Aluminum Extruder - 95 ESteps, TH3D Tough Extruder - 410 ESteps, BMG Extruder - 415 ESteps
 // When installing a Tough Extruder or E3D Titan or Bondtech that is Geared you likely need to enable the REVERSE_E_MOTOR_DIRECTION option
-//#define CUSTOM_ESTEPS
-//#define CUSTOM_ESTEPS_VALUE 410
+#define CUSTOM_ESTEPS
+#define CUSTOM_ESTEPS_VALUE 95
 //#define CUSTOM_ESTEPS_VALUE 
 //#define REVERSE_E_MOTOR_DIRECTION
 
